@@ -36,10 +36,12 @@ var menu = {
 		
 		// Append error messages
 		if(messages) {
+			$('#js-success').addClass('hide');
 			$('#js-error-handling').html(messages).removeClass('hide');
 		}
 		else {
-			$('#js-error-handling').empty().addClass('hide').after('<p class="alert alert-success">Thank you for your order</p>');
+			$('#js-error-handling').empty().addClass('hide');
+			$('#js-success').removeClass('hide');
 		}
 	},
 	
