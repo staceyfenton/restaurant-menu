@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Tests</title>
+	<link rel="stylesheet" href="css/mocha.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/chai.js"></script>
+	<script src="js/mocha.js"></script>
+	<script src="js/sinon.js"></script>
+	<script>mocha.setup('bdd');</script>
+	<script src="js/menu.js"></script>
+	<script src="js/tests.js"></script>
+	<script>
+		$(function() {
+			mocha.run();
+		});
+	</script>
+</head>
+<body>
+	<div id="mocha"></div>
+</body>
+</html>
